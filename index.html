@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Socului Finder</title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="icon" href="logo-socului-kebap.png">
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <script src="js/store-data.js"></script>
+    </head>
+    <body>
+        <div class="title">Magazine Socului Kebab</div>
+        <div class="search-container">
+            <div class="search" onclick="searchStores()">
+                <input id="zip-code-input" type="text" placeholder="Enter zip" >
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div class="stores-list-container">
+            <div class="stores-list">
+                <div class="store-container">
+                    <div class="store-info-container">
+                        <div class="store-address">
+                            <span>8480 Beverly Blvd</span>
+                            <span>Los Angeles, CA 90048</span>
+                        </div>
+                        <div class="store-phone-number">356-345-4654</div>
+                    </div>
+                    <div class="store-number-container">
+                        <div class="store-number">1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="map"></div>
+        <script src="js/index.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD83n7o8fBaKnY4dxHM7NrwoJODc54XKrU&callback=initMap"
+        async defer></script>
+    </body>
+</html> 
